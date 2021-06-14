@@ -1,0 +1,14 @@
+osascript -e "tell application \"Messages\"
+    set targetBuddy to \"+111111\"
+    set targetService to id of 1st service whose service type = iMessage
+    set textMessage to POSIX file \"$1\"
+    set theBuddy to buddy targetBuddy of service id targetService
+    send textMessage to theBuddy
+end tell"
+osascript -e "tell application \"Messages\"
+    set targetBuddy to \"+22222\"
+    set targetService to id of 1st service whose service type = iMessage
+    set textMessage to POSIX file \"$1\"
+    set theBuddy to buddy targetBuddy of service id targetService
+    send textMessage to theBuddy
+end tell"
